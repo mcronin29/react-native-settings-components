@@ -121,7 +121,7 @@ class PickerModal extends Component {
     });
   };
 
-  renderPickerItem = ({ item, index }) => {
+  renderPickerItem = ({ item, index, modalStyle }) => {
     const { pickerValue, options, renderListItem } = this.props;
     return isFunction(renderListItem) ? renderListItem({
       item,
@@ -138,6 +138,7 @@ class PickerModal extends Component {
         label={item.label}
         value={item.value}
         isLast={index === options.length - 1}
+        itemStyles={get(modalStyle, 'list.item')}
       />
     );
   };
@@ -188,7 +189,7 @@ class PickerModal extends Component {
                   onLayout={this.calculateScrollViewContentHeight}
                   style={[get(modalStyle, 'list.innerWrapper'), { height: scrollViewContentHeight }]}
                 >
-                  {map(options, (item, index) => this.renderPickerItem({ item, index }))}
+                  {map(options, (item, index) => this.renderPickerItem({ item, index, modalStyle }))}
                 </View>
               </ScrollView>
             </View>

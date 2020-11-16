@@ -185,7 +185,6 @@ class SettingsPicker extends Component {
       multi, renderCloseBtn, renderListItem,
     } = this.props;
     const { pickerOpen, pickerValue } = this.state;
-
     return (
       <View style={{ width: '100%' }}>
         {(!disabled) ? (
