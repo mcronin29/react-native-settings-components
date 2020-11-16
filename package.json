@@ -1,5 +1,5 @@
 {
-  "name": "react-native-settings-components-with-indicator-style",
+  "name": "@mcronin29/react-native-settings-components",
   "description": "settings components in style of native components (Category Header, Divider, EditText, Picker, Switch)",
   "version": "0.0.2",
   "main": "src/index.js",
