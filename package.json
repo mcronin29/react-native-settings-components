@@ -1,7 +1,7 @@
 {
   "name": "@mcronin29/react-native-settings-components",
   "description": "settings components in style of native components (Category Header, Divider, EditText, Picker, Switch)",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "src/index.js",
   "repository": {
     "type": "git",
